@@ -1,3 +1,4 @@
+from sklearn.datasets import load_iris
 import pandas as pd
 import numpy as np
 import pickle
@@ -6,7 +7,8 @@ from PIL import Image
 
 
 # loading in the model to predict on the data
-classifier = pickle.load(open('classifier.pkl', 'rb'))
+pickle_in=open('classifier.pkl', 'rb')
+classifier = pickle.load(pickle_in)
 
 def welcome():
 	return 'welcome all'
