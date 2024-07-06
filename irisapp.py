@@ -7,8 +7,7 @@ from PIL import Image
 
 
 # loading in the model to predict on the data
-pickle_in = open('classifier.pkl', 'rb')
-classifier = pickle.load(pickle_in)
+classifier = pickle.load(open('classifier.pkl', 'rb'))
 
 def welcome():
 	return 'welcome all'
