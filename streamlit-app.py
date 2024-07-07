@@ -37,7 +37,18 @@ def main():
   # this line allows us to display the front end aspects we have
 	# defined in the above code
 	st.markdown(html_temp, unsafe_allow_html = True)
-	st.slider.markdown(f'<div style="font-size: medium;text-align: left;color: Blue;">'ABC',0,20,10</div>',unsafe_allow_html=True)
+	
+	ColorMinMax = st.markdown(''' <style> div.stSlider > div[data-baseweb = "slider"] > div[data-testid="stTickBar"] > div {background: rgb(1 1 1 / 0%); } </style>''', unsafe_allow_html = True)
+	Slider_Cursor = st.markdown(''' <style> div.stSlider > div[data-baseweb="slider"] > div > div > div[role="slider"]{background-color: rgb(14, 38, 74); box-shadow: rgb(14 38 74 / 20%) 0px 0px 0px 0.2rem;} </style>''', unsafe_allow_html = True)
+	Slider_Number = st.markdown(''' <style> div.stSlider > div[data-baseweb="slider"] > div > div > div > div
+                                { color: rgb(14, 38, 74); } </style>''', unsafe_allow_html = True)
+	
+	col = f''' <style> div.stSlider > div[data-baseweb = "slider"] > div > div {{background: linear-gradient(to right, rgb(1, 183, 158) 0%, 
+                                rgb(1, 183, 158) {NB}%, 
+                                rgba(151, 166, 195, 0.25) {NB}%, 
+                                rgba(151, 166, 195, 0.25) 100%); }} </style>'''
+	
+	ColorSlider = st.markdown(col, unsafe_allow_html = True)
 
 	# the following lines create text boxes in which the user can enter
 	# the data required to make the prediction
