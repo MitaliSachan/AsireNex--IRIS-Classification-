@@ -41,9 +41,9 @@ def main():
 	# the following lines create text boxes in which the user can enter
 	# the data required to make the prediction
 	sl=st.slider('Select Sepal Length', 0.0, 10.0)
-        sw=st.slider('Select Sepal Width', 0.0, 10.0)
-        pl=st.slider('Select Petal Length', 0.0, 10.0)
-        pw=st.slider('Select Petal Width', 0.0, 10.0)
+	sw=st.slider('Select Sepal Width', 0.0, 10.0)
+	pl=st.slider('Select Petal Length', 0.0, 10.0)
+	pw=st.slider('Select Petal Width', 0.0, 10.0)
 	result =""
 
 	# the below line ensures that when the button called 'Predict' is clicked,
