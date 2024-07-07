@@ -32,11 +32,12 @@ def main():
 	html_temp = """
 	<div style ="background-color:teal;padding:13px">
 	<h2 style ="color:white;text-align:center;">Streamlit Iris Flower Classifier</h2>
-	</div>
+	</div><br>
 	"""
   # this line allows us to display the front end aspects we have
 	# defined in the above code
 	st.markdown(html_temp, unsafe_allow_html = True)
+	st.sidebar.slider.markdown(f'<div style="font-size: medium;text-align: left;color: Blue;">'ABC',0,20,10</div>',unsafe_allow_html=True)
 
 	# the following lines create text boxes in which the user can enter
 	# the data required to make the prediction
