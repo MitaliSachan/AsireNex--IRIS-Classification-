@@ -52,11 +52,11 @@ def main():
 	if st.button("Predict"):
 		result = prediction(sl, sw, pl, pw)
 	if(result==[0]):
-		st.success('The output is {}'.format('Setosa'))
+		st.success('The output is --> {}'.format('Setosa'))
 	elif(result==[1]):
-		st.success('The output is {}'.format('Versicolor'))
+		st.success('The output is --> {}'.format('Versicolor'))
 	else:
-		st.success('The output is {}'.format('Virginica'))
+		st.success('The output is --> {}'.format('Virginica'))
 		
 
 if __name__=='__main__':
