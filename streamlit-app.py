@@ -44,8 +44,8 @@ def main():
                                 { color: rgb(14, 38, 74); } </style>''', unsafe_allow_html = True)
 	
 	col = f''' <style> div.stSlider > div[data-baseweb = "slider"] > div > div {{background: linear-gradient(to right, rgb(1, 183, 158) 0%, 
-                                rgb(1, 183, 158) {NB}%, 
-                                rgba(151, 166, 195, 0.25) {NB}%, 
+                                rgb(1, 183, 158) {sl}%, 
+                                rgba(151, 166, 195, 0.25) {sw}%, 
                                 rgba(151, 166, 195, 0.25) 100%); }} </style>'''
 	
 	ColorSlider = st.markdown(col, unsafe_allow_html = True)
