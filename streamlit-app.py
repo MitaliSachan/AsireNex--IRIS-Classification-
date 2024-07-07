@@ -30,7 +30,7 @@ def main():
 	# here we define some of the front end elements of the web page like
 	# the font and background color, the padding and the text to be displayed
 	html_temp = """
-	<div style ="background-color:aqua;padding:13px ;border-radius:10% ">
+	<div style ="background-color:#344955;padding:13px ;border-radius:10% ">
 	<h2 style ="color:white;text-align:center;">Streamlit Iris Flower Classifier</h2>
 	</div><br>
 	"""
