@@ -51,7 +51,13 @@ def main():
 	# and store it in the variable result
 	if st.button("Predict"):
 		result = prediction(sl, sw, pl, pw)
-	st.success('The output is {}'.format(result))
+	if(result==[0]):
+		st.success('The output is {}'.format('Setosa'))
+	elif(result==[1]):
+		st.success('The output is {}'.format('Versicolor'))
+	else:
+		st.success('The output is {}'.format('Virginica'))
+		
 
 if __name__=='__main__':
 	main()
