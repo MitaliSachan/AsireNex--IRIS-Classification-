@@ -37,7 +37,7 @@ def main():
   # this line allows us to display the front end aspects we have
 	# defined in the above code
 	st.markdown(html_temp, unsafe_allow_html = True)
-	st.sidebar.slider.markdown(f'<div style="font-size: medium;text-align: left;color: Blue;">'ABC',0,20,10</div>',unsafe_allow_html=True)
+	st.slider.markdown(f'<div style="font-size: medium;text-align: left;color: Blue;">'ABC',0,20,10</div>',unsafe_allow_html=True)
 
 	# the following lines create text boxes in which the user can enter
 	# the data required to make the prediction
