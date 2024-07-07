@@ -30,8 +30,8 @@ def main():
 	# here we define some of the front end elements of the web page like
 	# the font and background color, the padding and the text to be displayed
 	html_temp = """
-	<div style ="background-color:yellow;padding:13px">
-	<h1 style ="color:black;text-align:center;">Streamlit Iris Flower Classifier ML App </h1>
+	<div style ="background-color:teal;padding:13px">
+	<h2 style ="color:black;text-align:center;">Streamlit Iris Flower Classifier</h2>
 	</div>
 	"""
   # this line allows us to display the front end aspects we have
@@ -40,17 +40,17 @@ def main():
 
 	# the following lines create text boxes in which the user can enter
 	# the data required to make the prediction
-	sepal_length = st.text_input("Sepal Length", "Type Here")
-	sepal_width = st.text_input("Sepal Width", "Type Here")
-	petal_length = st.text_input("Petal Length", "Type Here")
-	petal_width = st.text_input("Petal Width", "Type Here")
+	sl=st.slider('Select Sepal Length', 0.0, 10.0)
+        sw=st.slider('Select Sepal Width', 0.0, 10.0)
+        pl=st.slider('Select Petal Length', 0.0, 10.0)
+        pw=st.slider('Select Petal Width', 0.0, 10.0)
 	result =""
 
 	# the below line ensures that when the button called 'Predict' is clicked,
 	# the prediction function defined above is called to make the prediction
 	# and store it in the variable result
 	if st.button("Predict"):
-		result = prediction(sepal_length, sepal_width, petal_length, petal_width)
+		result = prediction(sl, sw, pl, pw)
 	st.success('The output is {}'.format(result))
 
 if __name__=='__main__':
